@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>merntask3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .main-container {
+            display: flex;
+            /* justify-content: space-around; */
+            /* width: 50%;
+            padding: 10px; */
+            width: 50%;
+            padding: 10px 85px;
+        }
+
+        .form-A {
+            height: 50%;
+            flex: 1;
+            padding: 20px;
+            background-color: rgb(154, 162, 170);
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px 2px gray;
+            margin-right: 10px;
+        }
+
+        .form-B {
+            height: 50%;
+            flex: 1;
+            padding: 20px;
+            background-color: rgb(154, 162, 170);
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px 2px gray;
+            margin-left: 10px
+            /* margin: 4%; */
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            justify-content: center;
+        }
+
+        input {
+            width: 70%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            width: 75%;
+            margin: 4%;
+            /* display: flex; */
+        }
+
+        button:hover {
+            background-color:gray;
+        }
+        .Country {
+            border-radius: 15px;
+            width: 50px;
+        }
+        select {
+            width:75%;
+            border:1px solid blackl;
+            -webkit-border-top-right-radius: 15px;
+            -webkit-border-bottom-right-radius: 15px;
+            -moz-border-radius-topright: 15px;
+            -moz-border-radius-bottomright: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            padding:10px;
+        }
+        /* Chrome, Safari, Edge, Opera to remove drag from phone input*/
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+        .form-A-image{
+            position: absolute;
+            top: 100px;
+            left: 370px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .form-B-image{
+            position: absolute;
+            top: 100px;
+            left: 725px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .form-A logo{
+            position: absolute;
+            top: 100px;
+            left: 725px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="form-A">
+            <img src="images/logo.png" alt="logo" class="form-A-image">
+            <center>
+            <h2>Form A</h2>
+            <form>
+                
+                <label for="username">Name *</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="phone">Phone *</label>
+                <input type="number" id="phone" name="phone" required>
+
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="Country">Country *</label>
+                <select id="Country">
+                <option value="Pakistan">Pakistan</option>
+                <option value="india">india</option>
+                <option value="United States">UnitedStates</option>
+                <option value="Saudia-Arabia">Saudia-Arabia</option>
+                </select>
+
+                <button type="submit">SUBMIT</button></form>
+            </center>
+        </div>
+
+        <div class="form-B">
+            <center>
+            <h2>Form B</h2>
+            <img src="images/logo.png" alt="logo" class="form-B-image">
+            <form>
+                <label for="username">Name *</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="phone">Phone *</label>
+                <input type="number" id="phone" name="phone" required>
+ 
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="Country">Country *</label>
+                <select name="Country" id="Country">
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="india">india</option>
+                    <option value="United States">UnitedStates</option>
+                    <option value="Saudia-Arabia">Saudia-Arabia</option>
+                    </select>
+                
+                <button type="submit">SUBMIT</button></form>
+                </center>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .header-container{
+            display: flex;
+            height: 50px;
+            width: 100%;
+            /* background-color: red; */
+        }
+        .height-50{
+            height:50px;
+        }
+        .flex-1{
+            flex: 1;
+        }
+        .color-red{
+            background-color: red;
+        }
+        .color-blue{
+            background-color: blue;
+        }
+        .logo-container{
+            flex: 1;
+            height: 50px;
+            /* color: red; */
+
+        }
+        .logo{
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+            box-shadow: 1px 1px 1px 1px lightgray;
+        }
+        .search-container{
+            flex: 2;
+            /* color: blue; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .search-input{
+            border-radius: 50px;
+            border:1px solid gray;
+            padding: 8px;
+        }
+        .action-container{
+            height: 50px;
+            flex:1;
+            justify-content: space-around;
+            align-items: center;
+            display: flex;
+            /* color: red; */
+        }
+        .profile-container{
+            height: 50px;
+            flex:1;
+            /* color: blue; */
+            justify-content: right;
+            align-items: center;
+            display: flex;
+        }
+        .username{
+            font-size: 15px;
+            display: block;
+            margin-top: 20px;
+            cursor: pointer;
+            color: rgb(81, 81, 196);
+        }
+        .left-container{
+            height: 80vh;
+            flex: 1;
+            color: blue;
+        }
+        .feed-container{
+            height: 80vh;
+            flex: 1;
+            color: right;
+        }
+        .right-container{
+            height: 80vh;
+            flex: 1;
+            color: blue;
+        }
+        .content{
+            display: flex;
+            height: 100vh;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        /* @media screen and (max-width:480px) {
+            .right-container {
+                display: none;
+            }
+            .left-container{
+                display: none;
+            }
+        } */
+        .width-100{
+            min-width: 150px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class ="header-container">
+        <div class ="logo-container height-50 flex-1 ">
+            <img src="images/facebook.png" alt="" class="logo">
+        </div>
+        <div class ="search-container height-50 flex-1 ">
+            <input type="text" class="search-input">
+        </div>
+        <div class ="action-container height-50 flex-1">
+            <img src="images/notification.png" alt="" class="logo">
+            <img src="images/message.png" alt="" class="logo">
+        </div>
+        <div class ="profile-container height-50 flex-1">
+            <div class="username"><u>Arham Shaikh</u></div>
+            <img src="images/profile.png" alt="" class="logo">
+        </div>
+    </div>
+    <div class="content">
+        <div class="left-container  height-500 flex-1 color-blue width-100"></div>
+        <div class="feed-container   height-500  flex-1 color-red width-100"></div>
+        <div class="right-container  height-500 flex-1 width-100 color-blue"></div>
+    </div>
+</body>
+</html>

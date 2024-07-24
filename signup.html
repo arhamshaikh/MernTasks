@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <style>
+        /* signup styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b15aeb;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-right: 80px;
+}
+
+.left-division {
+    flex:1;
+    padding: 100px;
+}
+
+.left-division img {
+    max-width: 120%;
+    height: auto;
+    display: block;
+}
+
+.right-division {
+    flex: 1;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(139, 3, 117, 0.1);
+}
+
+h2 {
+    margin: 0 0 30px;
+    color: #53055a;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #6b0b6e;
+    border-radius: 4px;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+a {
+    color: #830f92;
+    text-decoration: none;
+}
+
+button {
+    background-color: #530663;
+    color: #fff;
+    padding: 10px 40px;
+    border:#6b0b6e;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-division">
+            <img src="https://images.unsplash.com/photo-1579762715459-5a068c289fda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBhaW50aW5nc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Signup Image">
+        </div>
+        <div class="right-division">
+            <h2>SIGN UP</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="username">USERNAME</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <p>Don't have an account? <a href="#">SIGN UP NOW!</a></p>
+                <button type="submit">SIGN UP</button>
+                <button type="submit">SIGN IN</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

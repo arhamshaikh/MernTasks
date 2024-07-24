@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Signup Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .signup-container {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            padding: 20px;
+        }
+
+        .signup1 {
+            flex: 1;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px 2px gray;
+        }
+
+        .signup2 {
+            flex: 1;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            margin: 7%;
+            box-shadow: 2px 2px 2px 2px gray;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .already-account {
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: palevioletred;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 95%;
+        }
+
+        button:hover {
+            background-color:lightblue;
+        }
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+        }
+        .fa {
+            padding: 10px;
+            font-size: 30px;
+            width: 40px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .fa:hover {
+            opacity: 0.7;
+        }
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+        }
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <div class="signup1">
+            <h2>SIGNUP</h2>
+            <form>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">SUBMIT</button>
+                <p>_______________________or_____________________</p>
+                <center>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-google"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                </center>
+                <div class="already-account">
+                    <p><center>Already have an account? <a href="#">Login</a></center></p>
+                </div>
+            </form>
+        </div>
+        <div class="signup2">
+            <h2>SIGNUP</h2>
+            <form>
+                <label for="email2">Email</label>
+                <input type="email" id="email2" name="email2" required>
+
+                <label for="password2">Password</label>
+                <input type="password" id="password2" name="password2" required>
+
+                <button type="submit">SUBMIT</button>
+                <p>_______________________or_____________________</p>
+                <center>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-google"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                </center>
+                <div class="already-account">
+                    <p><center>Already have an account? <a href="#">Login</a></center></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
